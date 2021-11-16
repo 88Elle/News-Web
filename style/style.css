@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RR';
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+header ul {
+    display: flex; 
+}
+.header-top a h2 {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-family: 'RB';
+    color: #000000;
+}
+header ul a {
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'RB';
+    color: #3A3838;
+    padding: 15px;
+    transition: 300ms;
+}
+.logo {
+    margin-top: 20px;
+}
+header ul a:hover{
+    color: #EF4423;
+}
+.header-top__btn{
+    font-size: 40px;
+    color: #3A3838;
+    display: none;
+}
+
+.header-box img{
+    width: 100%;
+}
+
+.main__box {
+     display: flex;
+     width: 100%;
+}
+.item  {
+    width: 25%; 
+    display:flex;
+    flex-wrap: wrap; 
+}
+.item img {
+    flex-grow: 1;
+    width: 100%;
+}
+.item h3 {
+    font-size: 19px;
+    line-height: 22px;
+    font-family: 'RB';
+    color:#FFFFFF;   
+}
+.item p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #EBEBEB;   
+}
+.item:first-of-type{
+    background: #B71C1C; 
+}
+.item:nth-of-type(2) {
+    background: #6A1B9A;
+}
+.item:nth-of-type(3) {
+    background:#303F9F ;
+}
+.item:last-of-type {
+    background:#00695C ; 
+}
+.item:first-of-type h3 {
+    padding: 8px 15px  ; 
+}
+.item:nth-of-type(2) h3 {
+    padding: 15px 15px 9px 15px ;
+}
+.item:nth-of-type(3) h3 {
+    padding: 8px 15px 7px 15px ;
+}
+.item:last-of-type h3 {
+    padding: 14px 15px 9px 15px;
+}
+.item:first-of-type p {
+    padding: 8px 15px 15px 15px ;
+}
+.item:nth-of-type(2) p {
+    padding: 9px 15px 7px 15px ;
+}
+.item:nth-of-type(3) p {
+    padding: 7px 16px 16px 14px;
+}
+.item:last-of-type p {
+    padding: 9px 15px 8px 15px ;
+}
+.topnews {
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   font-family: 'RB';
+   color: #3A3838;
+}
+.box2 {
+    background: #EDEDED; 
+    width: 100%;
+} 
+.main__box2{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main__box2 img {
+    margin-right: 30px;
+    width: 100%;
+}
+.text h2 {
+    width: 540px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #3A3838;
+    font-family: 'RB';
+    margin: 20px 0 30px;
+}
+.text p {
+    width: 540px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #686868;
+    
+}
+footer{
+    background: #3A3838;
+    margin-top: 50px;
+}
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    
+}
+footer ul {
+    display: flex;    
+}
+a h2 {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-family: 'RB';
+    color: #FFFFFF;
+}
+footer ul a {
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'RB';
+    color: #FFFFFF;
+    padding: 15px;
+    display: block;
+    transition: 300ms;
+    
+}
+.logo {
+    margin-top: 28px;
+    margin-bottom: 29px;
+}
+footer ul a:hover{
+    color: #EF4423;
+}
+.footer-top__btn{
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+
+
+@media (max-width:1140px){
+  header ul{
+    display: none;
+ }
+  .header-top__btn{
+    display: block;
+ }
+  footer ul{
+    display: none;
+ }
+  .footer-top__btn{
+    display: block;
+ }
+  .header-top {
+    padding: 0 30px;
+ }
+  .footer-top{
+   padding: 0 30px;
+ }
+  .main__box2{
+    flex-wrap: wrap;
+ }
+  .main__box2 img{
+    margin-right: 0;
+ }
+  .text h2{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+ }
+  .text p{
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+@media (max-width:950px){
+    .main__box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+    }
+    @media (max-width:450px){
+        .main__box{
+            grid-template-columns: repeat(1, 1fr)
+        }
+    }
+    
+}
+     
+
+ 
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    
+    
+    
+    
